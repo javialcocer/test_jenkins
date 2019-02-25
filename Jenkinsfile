@@ -3,7 +3,7 @@
 
 def DOCKER_HUB_USER="fjalcr"
 def CONTAINER_NAME="dockerTest"
-def CONTAINER_TAG="test1"
+def CONTAINER_TAG="test"
 def HTTP_PORT="8081"
 def NAMEJOB="TEST"
 def WORKDIRLOCAL="/var/lib/docker/volumes/jenkins-data/_data/workspace/${NAMEJOB}"
