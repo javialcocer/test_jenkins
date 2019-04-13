@@ -11,7 +11,7 @@ let firefox = require('selenium-webdriver/firefox');
 const VERSIONS = ['65.0'];
 let driver = new Builder().forBrowser('firefox')
             .withCapabilities(Capabilities.firefox().setBrowserVersion('65.0'))
-            .usingServer('http://b7611845.ngrok.io:4444/wd/hub') // Conectamos a nuestro enjambre de navegadores listos para ejecutar nuestras tareas
+            .usingServer('http://enriquetejeda.com:4444/wd/hub') // Conectamos a nuestro enjambre de navegadores listos para ejecutar nuestras tareas //Servidor para el anjambre
             .setFirefoxOptions(
                 new firefox.Options().headless()) // Activamos firefox en modo headless (Sin necesidad de interfaz grafica)
             .build();
@@ -35,7 +35,7 @@ var tester = function(){
    }
 }
 describe('Test XCARET.COM - v1', () => {
-
+    /*
     it('Vericar Telefonos - Footer - XCARET.COM - ESPAÑOL', async () => { // Titulo de nuestro Test
 
         // Nuestra estructura de datos con los telefonos que deben de ir
@@ -64,14 +64,16 @@ describe('Test XCARET.COM - v1', () => {
          }
         expect(flag).to.equal(false); //Nosotros esperamos que el flag este en falso, osea si esta en TRUE tenemos UN PROBLEMA
 
-    });
+    });*/
 
+    /*
     it('Verificar Etiqueta SEO - XCARET.COM', async () => {
          await driver.get('http://local.jenkinsdev.com/');
          // await driver.sleep(20000);
          const title = await driver.findElement(By.name('robots')).getAttribute('content');
          expect(title).to.equal('index, follow');
      });
+     */
 
      it('Verificar Carrito - XCARET.COM', async () => {
          await driver.get('https://www.xcaret.com/es/');
