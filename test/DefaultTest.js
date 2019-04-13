@@ -11,7 +11,7 @@ let firefox = require('selenium-webdriver/firefox');
 const VERSIONS = ['65.0'];
 let driver = new Builder().forBrowser('firefox')
             .withCapabilities(Capabilities.firefox().setBrowserVersion('65.0'))
-            .usingServer('http://8507ef57.ngrok.io/wd/hub') // Conectamos a nuestro enjambre de navegadores listos para ejecutar nuestras tareas //Servidor para el anjambre
+            .usingServer('http://enriquetejeda.com:4444/wd/hub') // Conectamos a nuestro enjambre de navegadores listos para ejecutar nuestras tareas //Servidor para el anjambre
             .setFirefoxOptions(
                 new firefox.Options().headless()) // Activamos firefox en modo headless (Sin necesidad de interfaz grafica)
             .build();
