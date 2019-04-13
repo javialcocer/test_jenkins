@@ -2,8 +2,8 @@
 // Jenkinsfile
 
 def DOCKER_HUB_USER="fjalcr"
-def CONTAINER_NAME="dockertest"
-def CONTAINER_TAG="test"
+def CONTAINER_NAME="jenkins_test"
+def CONTAINER_TAG="v1"
 def HTTP_PORT="8081"
 def NAMEJOB="TEST"
 def WORKDIRLOCAL="/var/lib/docker/volumes/jenkins-data/_data/workspace/${NAMEJOB}"
