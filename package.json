@@ -1,16 +1,16 @@
 {
 	name: "selenium-mocha-chai-testing",
 	scripts: {
-	test: "node_modules/.bin/mocha Tests/DefaultTest.js --timeout 100000"
-},
+		test: "node_modules/.bin/mocha Tests/DefaultTest.js --timeout 100000"
+	},
 	private: true,
 	devDependencies: {
 		chai: "^4.1.2",
-	chromedriver: "^2.41.0",
-	mocha: "^5.2.0",
-	selenium-webdriver: "^4.0.0-alpha.1",
-	wraith: "latest",
-	webdrivercss: "latest",
-	webdriverio: "latest"
+		chromedriver: "^2.41.0",
+		mocha: "^5.2.0",
+		selenium-webdriver: "^4.0.0-alpha.1",
+		wraith: "latest",
+		webdrivercss: "latest",
+		webdriverio: "latest"
 	}
 }
